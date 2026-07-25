@@ -1,8 +1,7 @@
 :root {
-	--olive-leaf-color: #606c38;
-	--black-forest-color: #283618;
-	--cornsilk-color: #fefae0;
-	--light-caramel-color: #dda15e;
+	--blackish-color: #283618;
+	--whitish-color: #fefae0;
+	--light-coper-color: #dda15e;
 	--coper-color: #bc6c25;
 }
 
@@ -14,12 +13,12 @@
 body {
 	min-height: 100vh;
 	line-height: 1.5;
-	background-color: var(--cornsilk-color);
+	background-color: var(--whitish-color);
 
 	font-family:
 		system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	color: var(--black-forest-color);
+	color: var(--blackish-color);
 }
 
 button {
@@ -28,23 +27,29 @@ button {
 
 nav {
 	width: 100vw;
-	background-color: var(--light-caramel-color);
-	color: var(--olive-leaf-color);
+	padding: 5px 0;
+	background-color: var(--light-coper-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 5px;
 }
 
-nav button {
-	padding: 10px;
+.nav-btn {
+	padding: 10px 20px;
 	background-color: inherit;
 	border: none;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 nav button:hover {
 	background-color: var(--coper-color);
-	color: var(--cornsilk-color);
+}
+
+.hovering {
+	background-color: var(--coper-color);
+	color: var(--whitish-color);
 }
 
 #content {
