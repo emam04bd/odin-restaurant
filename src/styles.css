@@ -29,6 +29,7 @@ button {
 nav {
 	width: 100vw;
 	background-color: var(--light-caramel-color);
+	color: var(--olive-leaf-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -44,4 +45,23 @@ nav button {
 nav button:hover {
 	background-color: var(--coper-color);
 	color: var(--cornsilk-color);
+}
+
+#content {
+	margin: auto;
+	padding: 20px;
+	max-width: 800px;
+}
+
+h1,
+p {
+	text-align: center;
+}
+
+h1.home {
+	margin: 40px 0;
+}
+
+p.home {
+	margin: 20px 0;
 }
