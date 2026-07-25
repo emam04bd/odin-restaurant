@@ -1,0 +1,47 @@
+:root {
+	--olive-leaf-color: #606c38;
+	--black-forest-color: #283618;
+	--cornsilk-color: #fefae0;
+	--light-caramel-color: #dda15e;
+	--coper-color: #bc6c25;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+	background-color: var(--cornsilk-color);
+
+	font-family:
+		system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	color: var(--black-forest-color);
+}
+
+button {
+	font: inherit;
+}
+
+nav {
+	width: 100vw;
+	background-color: var(--light-caramel-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav button {
+	padding: 10px;
+	background-color: inherit;
+	border: none;
+	border-radius: 5px;
+}
+
+nav button:hover {
+	background-color: var(--coper-color);
+	color: var(--cornsilk-color);
+}
