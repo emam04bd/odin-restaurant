@@ -54,7 +54,7 @@ nav button:hover {
 
 #content {
 	margin: auto;
-	padding: 20px;
+	padding: 0 20px;
 	max-width: 800px;
 }
 
@@ -69,4 +69,37 @@ h1.home {
 
 p.home {
 	margin: 20px 0;
+}
+
+h1.menu {
+	margin: 20px 0;
+}
+
+#food-list {
+	display: grid;
+	grid-template: 350px / repeat(3, 200px);
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.food-snippet {
+	background-color: var(--light-coper-color);
+}
+
+.food-snippet:hover {
+	background-color: var(--coper-color);
+	color: var(--whitish-color);
+	cursor: pointer;
+}
+
+.food-image {
+	background-image: url("./images/food1.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 200px;
+	aspect-ratio: 2/3;
+}
+
+.food-info {
+	padding: 10px;
 }
