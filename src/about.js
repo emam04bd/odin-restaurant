@@ -8,9 +8,6 @@ export default function () {
 
 	const aboutH1El = document.createElement("h1");
 	aboutH1El.classList.add("about");
-	const aboutLinkEl = document.createElement("a");
-	aboutLinkEl.setAttribute("href", "https://github.com/emam04bd");
-	aboutLinkEl.innerText = "About Us";
+	aboutH1El.innerText = "About Us";
 	contentContainerEl.appendChild(aboutH1El);
-	aboutH1El.appendChild(aboutLinkEl);
 }
