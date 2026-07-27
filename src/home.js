@@ -1,5 +1,6 @@
 export default function () {
 	const contentContainerEl = document.querySelector("#content");
+	contentContainerEl.innerText = "";
 
 	const navBtnEls = document.querySelectorAll(".nav-btn");
 	navBtnEls.forEach((el) => el.classList.remove("hovering"));

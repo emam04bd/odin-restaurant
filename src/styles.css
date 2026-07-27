@@ -1,34 +1,44 @@
 :root {
 	--blackish-color: #283618;
-	--whitish-color: #fefae0;
-	--light-coper-color: #dda15e;
 	--coper-color: #bc6c25;
+	--light-coper-color: #dda15e;
+	--whitish-color: #fefae0;
 }
 
 * {
-	box-sizing: border-box;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
 	min-height: 100vh;
 	line-height: 1.5;
-	background-color: var(--whitish-color);
 
 	font-family:
 		system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	color: var(--blackish-color);
+
+	background-color: var(--whitish-color);
+
+	position: relative;
 }
 
 button {
 	font: inherit;
+	background-color: inherit;
+}
+
+header {
+	position: sticky;
+	top: 0;
 }
 
 nav {
 	width: 100vw;
 	padding: 5px 0;
 	background-color: var(--light-coper-color);
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -37,9 +47,9 @@ nav {
 
 .nav-btn {
 	padding: 10px 20px;
-	background-color: inherit;
 	border: none;
 	border-radius: 5px;
+
 	cursor: pointer;
 }
 
@@ -48,8 +58,8 @@ nav button:hover {
 }
 
 .hovering {
-	background-color: var(--coper-color);
 	color: var(--whitish-color);
+	background-color: var(--coper-color);
 }
 
 #content {
@@ -63,7 +73,8 @@ p {
 	text-align: center;
 }
 
-h1.home {
+h1.home,
+h1.about {
 	margin: 40px 0;
 }
 
@@ -78,8 +89,8 @@ h1.menu {
 #food-list {
 	display: grid;
 	grid-template: 350px / repeat(3, 200px);
-	gap: 10px;
 	justify-content: space-between;
+	gap: 10px;
 }
 
 .food-snippet {
@@ -87,15 +98,13 @@ h1.menu {
 }
 
 .food-snippet:hover {
-	background-color: var(--coper-color);
 	color: var(--whitish-color);
 	cursor: pointer;
+
+	background-color: var(--coper-color);
 }
 
 .food-image {
-	background-image: url("./images/food1.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
 	width: 200px;
 	aspect-ratio: 2/3;
 }
